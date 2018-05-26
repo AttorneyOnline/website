@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald%7CRoboto+Condensed" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Attorney Online - Help</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          onLoad();
+          $('a[href^="#"]:not([class*=acc])').on('click',function (e) {
+              e.preventDefault();
+
+              var target = this.hash;
+              var $target = $(target);
+    
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top
+              }, 900, 'swing', function () {
+                  window.location.hash = target;
+                });
+            });
+        });
+        
+        function onLoad(){
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                //User is on mobile
+            }
+            else{
+                document.getElementById("navbarItems").innerHTML = document.getElementById("navbarItems").innerHTML + '<li class="nav-item"><a class="nav-link" href="http://web.aceattorneyonline.com/">Play Online</a></li>';
+            }
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113494687-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-113494687-1');
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto" id="navbarItems">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://aceattorneyonline.com/#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://aceattorneyonline.com/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://aceattorneyonline.com/#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://aceattorneyonline.com/#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/help.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://discord.gg/wWvQ3pw">Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="tutorial">
+        <h1 class="mt-4 mb-3" style="text-align: center;">Attorney Online: The Basics</h1>
+        <hr class="gold">
+        <div class="row" style="border: 1px solid #ffe591;border-radius: 25px !important;background: #2f2216;margin-bottom:20px;padding: 10px;">
+            <div class="col-lg-12" style="text-align: center;">
+                <h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:0px;">Hello There!</h2>
+                <p>
+                    It looks like you may be new to Attorney Online, or at least need a refresher on how it all works. That is A-Okay! That is what this document is for, as well as me! I’m the Tutorial, or Tutorial Ema, and I’ll be your teacher to the basics of Attorney online, or AO for short, so let's begin!
+                </p>
+            </div>
+            <hr>
+            <div class="col-lg-12 helpcontainer">
+                <h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">The Client</h2>
+                <img class="img-fluid" src="images/help3.png">
+                <p>
+                    This will be the first thing you see once you pick a server and then a character.
+                    This window is known as the “Client”. Everything located here are the tools you’ll need to chat, defend, prosecute, and ultimately do anything inside AO,
+                    let’s go over everything located here.
+                </p>
+                <hr>
+                <h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">In-Character</h2>
+                <img class="img-fluid" src="images/help5.png">
+                <p>
+                    This is the “In Character” Screen, in here, you’ll see the actual characters come to life, and this is where you’ll do most of the talking on AO. There is a few key things to know about here.
+                    <h3>1. Display Screen</h3>
+                    <p>
+                        The display screen is where you’ll see the sprite, background, name, and text of other players or yourself. One message will appear after another, and will be recorded on the Chat history(4).
+                    </p>
+                    <h3>2. Text Line</h3>
+                    <p>
+                        This thin, empty, gray line between your buttons and display screen is the IC Text Line. Click here to actually type out your message. Once you press enter, it will appear on the display screen for everyone to see.
+                    </p>
+                    <h3>3. Emotion Buttons</h3>
+                    <p>
+                        This rectangle full of faces are the Emote Buttons. Each button is a different sprite that will correspond with the message you type in. You click on one of these buttons to use that “emote” as an expression to go along your typed message in the Text Line.
+                    </p>
+                    <h3>4. Chat History</h3>
+                    <p>
+                        That wall of text is called the Chat History. Here is where all past messages end up after their showcase on the Display screen, it goes from Oldest to Newest from bottom to top. It displays the message as well as which character spoke that message, and has a scroll to the right to view further down the chat log.
+                    </p>
+                </p>
+                <hr>
+                <h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">Message Options</h2>
+                <img class="img-fluid" src="images/help1.png">
+                <p>
+                    Now this section is really important, and has a few more things to cover, but this section of your client is all the buttons and settings you’ll need to further enrich your AO experience.
+                    <h3>1. “Hold it!”, “Objection!”, & “Take That!”</h3>
+                    <p>
+                        If you are a fan of Ace Attorney, you know full well what these three statements mean. These three buttons add a condition on top of your next typed out message that plays the famous “Hold it, Objection, Take that” pop ups before displaying your message. Characters with voice lines will also play their voice lines as this condition plays. You can press one of these buttons to toggle it on, and again to toggle it back off. The button automatically turns itself off after being used once, to avoid spam.
+                    </p>
+                    <h3>2. Emote Drop Down & Pre/Flip Checks</h3>
+                    <p>
+                        First off, the drop down menu marked “Normal” is your emote drop down menu. This drop down menu has all of your emotes listed in word form. If you do not want to press the button on the IC menu, you can use this drop down menu instead. It changes automatically to the currently selected emote as you press its corresponding button. Alternatively are the “Pre” and “Flip” check box’s. Every emote has three stages of animation, a pre-animation played before talking (such as desk slam, damage or pointing), a talking animation, and a idle animation. If you check “pre”, it will play the currently selected Emote’s pre-animation.  Leaving it unchecked skips the emotes pre-animation. Double clicking an emote button will automatically check your sprites "pre" animation. “Flip” will flip your sprite over, like a mirror effect in example, in the IC display. This is useful to place a defense in the prosecutors bench or vice versa.
+                    </p>
+                    <h3>3. Change Character, Reload Theme, Call Mod</h3>
+                    <p>
+                        Change Character will bring you back to the character selection screen. That will allow you to use another character and there is also an option to change the server you are at. Reload theme is used when you change your theme or character inis, but I’ll not cover those here. Don’t worry about it for now. Pressing the Call Mod button will send a warning to all online moderators. Press it when you are having issues with trolls or people breaking rules, or when you need a moderator, in general.
+                    </p>
+                    <h3>4. Flash, Mute, Evidence, Color</h3>
+                    <p>
+                        The “!” button is the flash button. Pressing it and sending a message will play a flash and a sound effect, for emphasis. The mute button will allow you to mute a character. If a character is annoying you and no mods are nearby, you can use it. Tip: During a case, you can mute all unrelated characters, so you can play the case without interruptions. The evidence button will switch you to the evidence GUI. There, you can edit, see and present evidence, depending on the server you are. Note that not every server supports this, and evidence is usually handled using a Google Docs link. The color button allows you to change the color of the text you use.
+                    </p>
+                    <h3>About Colors</h3>
+                    <p>
+                        White is used for general talking, green for cross-examination and important questions, red is used on AA for emphasis on words or terms, but on AO it is not used too much, mainly for expressing anger, or in some server as a mod-locked color. Orange is for testimonies title, blue is used for thinking when between parentheses and yellow is used on AA for robots and machines, although it is not used too much on AO. Rumors say there is a secret color.
+                    </p>
+                </p>
+                <hr>
+                <img class="img-fluid" src="images/help2.png">
+                <h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">History and OOC</h2>
+                <p>
+                    This separate chat box to the top right of your client is known as the Out of Character Chat (OOC). This is a handy tool when a case is underway, as well for typing out commands.
+                    <h3>1. Chat History/Display</h3>
+                    <p>
+                        This large scrollable grey box is the OOC chat display. Here is where you’ll see any OOC message inside your message, or other useful information from the MOTD, to the area listing. Messages will display from newest messages towards the bottom. With a username(3) before their message.
+                    </p>
+                    <h3>2. OOC Chat Bar</h3>
+                    <p>
+                        This long Dark gray empty bar is where you click to type things into OOC. You type both messages and commands here. When first joining a server, it is a good habit to use this before the IC chat, or else, you may risk interrupting something important.
+                    </p>
+                    <h3>3. OOC Username Box</h3>
+                    <p>
+                        This smaller dark grey box is where you input your username. You cannot use the OOC chat if you do not have a name set beforehand. Before a name is entered, it will display a light grey colored font word saying “name” so it’s easy to spot.
+                    </p>
+                    
+                    <h3>4. Server/Master Switch</h3>
+                    <p>
+                        This button, set to default to “Server” switches your OOC chat from Server side OOC chat to the Master server chat, which is viewable across all servers, as a sort of global chat. When in Server chat, it’ll display “Server”, and when in Master chat, it’ll display “Master”.
+                    </p>
+                </p>
+                <hr>
+                <h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">Song List</h2>
+                <img class="img-fluid" src="images/help4.png">
+                <p>
+                    The last major section of your client will be located to the bottom right of the window. This bright looking menu is known as the “Music List”. Here is where you select your Ace Attorney music to play during trials, to better immerse yourself into the case. A good rule of thumb to know about the music list is Green highlighted titles means you have the song, while red highlighted mean you do not have the song, or it is not song related.
+                    <h3>Area Shortcut List</h3>
+                    <p>
+                        
+                    </p>With the addition of Tsuserver3 to the server, you can now use an effective Area shortcut using this chunk of lines at the top of the music list. You can double click on one of these to move to that location.
+                    <h3>Music Lists</h3>
+                    <p>
+                        Under the area shortcuts, is the actual music list. The music is organized with the “===   ===” titles. Things from preludes, objection themes, and pursuit themes will be located at this list. Click on one of them to play the song in the client, or click the title to stop the music.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">&copy; AO
+                <script>
+                    var today = new Date();
+                    var year = today.getFullYear();
+                    document.write(year);
+                </script>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
