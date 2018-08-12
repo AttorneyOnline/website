@@ -48,6 +48,10 @@ body {
  opacity: 100 !important;
 }
 
+.navbar-nav.ml-auto {
+  margin: 0 auto;
+}
+
 body {
   background: #2c3d51;
   color: white;
