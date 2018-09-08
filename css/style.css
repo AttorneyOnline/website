@@ -205,20 +205,32 @@ a:hover{
   opacity: 0.8;
 }
 
+.helpcontainer h2 {
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
 .helpcontainer h3 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .helpcontainer p {
-    margin-bottom: 16px;
-    margin-top: 0;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .helpcontainer img {
-    display: block;  
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px;
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.help-item-number {
+  color: #999;
+  padding-right: .5em;
 }
