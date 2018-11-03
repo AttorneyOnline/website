@@ -234,3 +234,12 @@ a:hover{
   color: #999;
   padding-right: .5em;
 }
+
+.navbar-nav.ml-auto { 
+  margin: 0 auto; 
+  background-color: black !important;
+}
+
+.navbar {
+  background-color: black !important;
+}
