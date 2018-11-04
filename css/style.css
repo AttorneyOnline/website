@@ -59,15 +59,15 @@ body {
 }
 
 .page-heading{
- font-family: 'Oswald', sans-serif;
- text-transform: uppercase;
- margin-top: 5px;
- text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-top: 5px;
+  text-align: center;
 }
 
 hr.gold {
-border-top: 10px solid #f3b137;
-width: 250px;
+  border-top: 5px solid #f3b137;
+  width: 250px;
 }
 
 .about {
@@ -117,8 +117,8 @@ border-radius: 0px !important;
 
 @media (max-width:980px){
   .carousel-item {
-  background-size: cover;
-}
+    background-size: cover;
+  }
 }
 
 h1 {
@@ -150,19 +150,32 @@ a {
 }
 
 .button-carousel {
-      background-color: #2f2216;
-    max-width: 200px;
-    padding: 30px;
-    border: 2px solid #ffe591;
-    color: white !important;
-    border-radius: 15px;
+  background-color: #2f2216;
+  max-width: 200px;
+  padding: 30px;
+  border: 2px solid #ffe591;
+  color: white !important;
+  border-radius: 15px;
 }
 
-.button-carousel p{
+.button-carousel p {
   margin-top: -17px;
   font-family: 'Poiret One', cursive;
- text-transform: uppercase;
-     font-size: 24px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.button-carousel-container {
+  position: absolute;
+  top: 62vh;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 500px;
 }
 
 .download-button h4 {
@@ -190,8 +203,14 @@ a {
   background-color: #2c3d51;;
 }
 
-.download-box strong {
-  color:#ffe591;
+.download-box {
+  padding: 10px 5px 10px 10px;
+  width: 100%;
+}
+
+.download-box h6, strong {
+  font-weight: bold;
+  color: #ffe591;
 }
 .download-box a, .download-button a, .links a, .card a {
   text-decoration: underline;

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -34,10 +33,9 @@
     });
 
     function onLoad() {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-        //User is on mobile
-      }
-      else {
+      if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+          .test(navigator.userAgent)) {
+        // User is not on mobile - show download button
         document.getElementById("navbarItems").innerHTML = document.getElementById("navbarItems").innerHTML + '<li class="nav-item"><a class="nav-link" href="http://web.aceattorneyonline.com/">Play Online</a></li>';
       }
     }
@@ -49,10 +47,8 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-113494687-1');
   </script>
-
 </head>
 
 <body>
@@ -95,7 +91,7 @@
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" style="background-image: url('images/background.jpg');">
           <div class="inside-carousel">
-            <div style="position: absolute;top: 62vh;margin: auto;right: 0;bottom: 0;left: 0;display: flex;flex-direction: row;flex-wrap: wrap;max-width: 500px;">
+            <div class="button-carousel-container">
               <div class="button-carousel" style="background-color: #a75200;max-height: 3em;position: relative;">
                 <p>
                   <a href="#download" style="color:white;">Download</a>
@@ -123,70 +119,105 @@
         </div>
         <div class="col-lg-6" style="padding-top:10px;">
           <h2>Attorney Online</h2>
-          <p>Attorney Online, abbreviated AO, is a roleplaying chatroom based primarily in the Ace Attorney universe.
+          <p>
+            Attorney Online, abbreviated AO, is a roleplaying chatroom based primarily in the Ace Attorney universe.
             Sporting hundreds of player-made characters, court cases and abstract roleplays, AO has been a tight-knit
-            community for well over
-            5 years.</p>
-          <p>We are always welcoming new additions to our community, if you'd like to learn more. Please check out our
-            <a href="https://discordapp.com/invite/PGupmrN" target="_blank">Discord server</a>.</p>
+            community for well over 5 years.
+          </p>
+          <p>
+            We are always welcoming new additions to our community. If you'd like to learn more, please check out our
+            <a href="https://discordapp.com/invite/PGupmrN" target="_blank">Discord server</a>.
+          </p>
         </div>
       </div>
     </div>
+
     <hr id="download" />
-    <h1 class="mt-4 mb-3" style="text-align: center;">DOWNLOAD</h1>
+    <h1 class="mt-4 mb-3" style="text-align: center;">FULL DOWNLOAD</h1>
     <hr class="gold" />
-    <div class="download-button">
-      <h4><a href="https://s3.wasabisys.com/ao-downloads/Attorney%20Online%202.4.10%20Full.zip" target="_blank">FULL
-          DOWNLOAD (WINDOWS)</a>
-        <br><span style="font-size:15px;"><a href="https://mega.nz/#!XJ1xTT6I!3OzTmSplvJPssA1z4QWTvH79QnjK_HqWeU00OLCt1iU"
-            target="_blank">(MEGA Mirror)</a></span></h4>
+
+    <div style="display: flex; max-width: 400px; margin: 0 auto;">
+        <div class="download-button" style="flex: 0 1;">
+          <h4>
+            <a href="https://s3.wasabisys.com/ao-downloads/Attorney%20Online%202.4.10%20Full.zip" target="_blank" style="font-weight: bold;">
+              <img src="images/windows_logo.svg" height="128px" style="margin: .75em;"/>
+              WINDOWS
+            </a>
+            <br><span style="font-size:15px;"><a href="https://mega.nz/#!XJ1xTT6I!3OzTmSplvJPssA1z4QWTvH79QnjK_HqWeU00OLCt1iU"
+                target="_blank">(MEGA Mirror)</a></span>
+          </h4>
+        </div>
+        <div class="download-button" style="flex: 0 1;">
+          <h4>
+            <a href="https://s3.wasabisys.com/ao-downloads/Attorney_Online_2.4.10_r2_Full.tar.gz" target="_blank" style="font-weight: bold;">
+              <img src="images/linux_logo.svg" height="128px" style="stroke: #fff; stroke-width: 2px; margin: .75em;"/>
+              LINUX
+            </a>
+            <br><span style="font-size:15px;"><a href="https://mega.nz/#!bVsiHIoL!dUseVwgq-kJAu3utGopdtFbDxavwSfF4llsBJbOD4Nk"
+              target="_blank">(MEGA Mirror)</a></span>
+          </h4>
+        </div>
     </div>
-    <div class="download-button" style="margin-top: 20px;">
-      <h4><a href="https://s3.wasabisys.com/ao-downloads/Attorney_Online_2.4.10_r2_Full.tar.gz" target="_blank">FULL
-          DOWNLOAD (LINUX)</a>
-        <br><span style="font-size:15px;"><a href="https://mega.nz/#!bVsiHIoL!dUseVwgq-kJAu3utGopdtFbDxavwSfF4llsBJbOD4Nk"
-            target="_blank">(MEGA Mirror)</a></span></h4>
-    </div>
-    <div class="row" style="border: 1px solid #ffe591;border-radius: 25px !important;background: #2f2216;margin:20px 0 20px 0;text-align:center;">
-      <div class="download-box" style="padding: 10px 5px 10px 10px;width:100%;">
-        <h5 style="margin-bottom:15px;"><strong>New to AO? Don’t have an existing installation of AO?</strong> This is
-          for you.</h5>
-        <p style="margin-bottom:0px;">
-          <strong>Running Mac?</strong> Use Wine. Wine lets you play Windows games natively without Boot Camp. Be sure
-          you have the latest version of Wine (&geq;2.0.3)!
-        </p>
+
+    <div class="row" style="border: 1px solid #ffe591;border-radius: 25px !important;background: #2f2216; margin:20px auto 20px auto; max-width: 70%;">
+      <div class="download-box">
+        <h5 style="margin-bottom:15px; text-align:center;">
+          <strong>New to AO? Don’t have an existing installation of AO?</strong><br> This is for you.
+        </h5>
+
+        <h6>Running Mac?</h6>
         <p>
-          <strong>Running Linux?</strong> Linux releases currently only support 64-bit operating systems. If you are
-          using a 32 bit version of Linux, try Wine.
+          Use Wine. Wine lets you play Windows games natively without Boot Camp. Be sure you have the latest version of Wine
+          (&geq;2.0.3)!
         </p>
-        <p style="overflow-wrap: break-word;">
-          <strong>Windows SHA-256:</strong> <kbd>1139765420b47992bf0931e33e6f578ffa6757133ab43c751a477d888783c76c</kbd>
+
+        <h6>Running Linux?</h6>
+        <p>
+          Linux releases currently only support 64-bit operating systems. If you are using a 32 bit version of Linux, try Wine.
         </p>
-        <p style="overflow-wrap: break-word;">
-          <strong>Linux SHA-256:</strong> <kbd>593d6556cba52691d8c04d14e9e9d4b8524c150c5bc7b819cc06808f439d1f04</kbd>
-        </p>
+
+        <div style="overflow-wrap: break-word; font-size: smaller;">
+          <p>
+            <strong>Windows SHA-256:</strong> <kbd>1139765420b47992bf0931e33e6f578ffa6757133ab43c751a477d888783c76c</kbd>
+          </p>
+          <p>
+            <strong>Linux SHA-256:</strong> <kbd>593d6556cba52691d8c04d14e9e9d4b8524c150c5bc7b819cc06808f439d1f04</kbd>
+          </p>
+        </div>
       </div>
     </div>
-    <div class="row" style="border: 1px solid #ffe591;border-radius: 25px !important;background: #2f2216;text-align:center;max-width: 640px;margin: 0 auto;margin-bottom: 20px;">
-      <div style="padding: 10px 5px 10px 10px;width:100%;" class="download-box">
-        <h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:0px;">Updates</h2>
-        <h5><strong>Already have an existing install, and looking to update clients?</strong> Look here.</h5>
-        <p style="color:#ffe591">When prompted, <strong>overwrite</strong> all the ini files stored within the
-          themes/default folder.</p>
-        <div class="col-md-6" style="float: left;width: 50%;padding:0px;border:solid black 2px;border-right:1px solid black;margin-bottom:10px;">
+
+    <hr id="updates" />
+    <h1 class="mt-4 mb-3" style="text-align: center;">UPDATES</h1>
+    <hr class="gold" />
+
+    <div class="row" style="border: 1px solid #ffe591;border-radius: 25px !important;background: #2f2216;max-width: 70%;margin: 0 auto;margin-bottom: 20px;">
+      <div class="download-box">
+        <h5 style="margin-bottom:15px; text-align:center;">
+          <strong>Already have an existing install, and looking to update clients?</strong> <wbr>Look here.
+        </h5>
+
+        <div class="col-md-6" style="float: left;width: 50%;padding:0px;border:solid black 2px;border-right:1px solid black;margin-bottom:10px;text-align: center;">
           <h4 style="background:#473322;margin:0px;border-bottom:2px solid black;">Windows</h4>
           <h5 style="margin:0px;"><a href="https://github.com/AttorneyOnline/AO2-Client/releases/download/2.4.10/Attorney_Online_2.4.10_Update.zip"
-              target="_blank">2.4.10</a></h5>
+              target="_blank">2.4.10</a> (update only)</h5>
         </div>
-        <div class="col-md-6" style="float: left;width: 50%;padding:0px;border:solid black 2px;border-left:1px solid black;margin-bottom:10px;">
+        <div class="col-md-6" style="float: left;width: 50%;padding:0px;border:solid black 2px;border-left:1px solid black;margin-bottom:10px;text-align: center;margin-bottom:15px;">
           <h4 style="background:#473322;margin:0px;border-bottom: 2px solid black;">Linux</h4>
           <h5 style="margin:0px;"><a href="https://s3.wasabisys.com/ao-downloads/Attorney_Online_2.4.10_r2_Update.tar.gz"
-              target="_blank">2.4.10</a></h5>
+              target="_blank">2.4.10</a> (update only)</h5>
         </div>
-        <h5 style="clear:both;"><strong>WINDOWS SHA-256</strong></h5>
-        <p style="overflow-wrap: break-word;"><strong><span style="color:white;">2.4.10</span> - SHA-256:</strong> <kbd>4290b3439b2852db6715991c29377efd521f37f2fa37b02de9b7eb3f2001888e</kbd></p>
-        <h5><strong>LINUX SHA-256</strong></h5>
-        <p style="overflow-wrap: break-word;"><strong><span style="color:white;">2.4.10</span> - SHA-256:</strong> <kbd>84ce1a99bd0ca6a795f1b24c0b5307ddb31f9eb256babf3fc332d145783bdfa0</kbd></p>
+        <p>
+          When prompted, <strong>overwrite</strong> all the ini files stored within the themes/default folder.
+        </p>
+        <div style="overflow-wrap: break-word; font-size: smaller;">
+            <p>
+              <strong>Windows SHA-256:</strong> <kbd>4290b3439b2852db6715991c29377efd521f37f2fa37b02de9b7eb3f2001888e</kbd>
+            </p>
+            <p>
+              <strong>Linux SHA-256:</strong> <kbd>84ce1a99bd0ca6a795f1b24c0b5307ddb31f9eb256babf3fc332d145783bdfa0</kbd>
+            </p>
+          </div>
       </div>
     </div>
     <hr id="faq" />
@@ -203,34 +234,61 @@
 
         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
           <div class="card-body">
-            We are not to be confused with the similarly named Ace Attorney Online. Attorney Online is a place where
-            you can RP with others in a courtroom drama environment.
+            We are not to be confused with the similarly named <a href="http://aaonline.fr/" target="_blank">Ace Attorney Online</a>.
+            Whereas AAO only offers pre-scripted cases, AO boasts the ability to do live, off-the-cuff cases in a courtroom drama
+            environment.
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-header" role="tab" id="headingTwo">
           <h5 class="mb-0">
-            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-              aria-controls="collapseTwo">I’m missing characters/backgrounds/music! How do I download more content?
-            </a>
+            <a class="acc" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+              aria-controls="collapseTwo">How do I play the game? What do I do?</a>
           </h5>
         </div>
+
         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="card-body">
-            Each server may have their own unique content pack that they use. If you look in the server description in
-            the lobby, you may find the link to their downloads to get the pack.
+            <p>
+              Excellent question! To start, you will want to find either a pre-written case or a case template to
+              create your own case. Next, find players to fill in each position (prosecution, defense, co-defense, judge,
+              witnesses, etc.). Once you have gathered the required players and found a vacant courtroom, you can begin
+              your case!
+            </p>
+            <p>
+              Still finding it confusing? There are various communities in AO that organize cases regularly; you need only
+              find and watch (or even join) a case to get an idea of how the game works.
+            </p>
+            <p>
+              Cases can last around 5 to 6 hours.
+            </p>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-header" role="tab" id="headingThree">
           <h5 class="mb-0">
-            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-              aria-expanded="false" aria-controls="collapseThree">“bass.dll is missing”</a>
+            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree">I’m missing characters/backgrounds/music! How do I download more content?
+            </a>
           </h5>
         </div>
         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="card-body">
+            Each server may have their own unique content pack that they use. If you look in the server description in
+            the lobby, you can find a link to their downloads to get the pack.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingFour">
+          <h5 class="mb-0">
+            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">“bass.dll is missing”</a>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
           <div class="card-body">
             This is a known issue with Microsoft Edge: you may be attempting to run the game from the browser cache.
             You must extract the archive to a folder of your choosing, such as your desktop.
@@ -238,13 +296,13 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" role="tab" id="headingX">
+        <div class="card-header" role="tab" id="headingFive">
           <h5 class="mb-0">
-            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseX" aria-expanded="false"
-              aria-controls="collapseX">Why is it detected as a virus?</a>
+            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+              aria-controls="collapseFive">Why is it detected as a virus?</a>
           </h5>
         </div>
-        <div id="collapseX" class="collapse" role="tabpanel" aria-labelledby="headingX">
+        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
           <div class="card-body">
             Add an exception to your antivirus. False positives are very common on small software like ours, as most
             antivirus software these days use a reputation-based system.
@@ -252,26 +310,26 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" role="tab" id="headingFour">
+        <div class="card-header" role="tab" id="headingSix">
           <h5 class="mb-0">
-            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
-              aria-controls="collapseFour">I can't connect to the master server!</a>
+            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+              aria-controls="collapseSix">I can't connect to the master server!</a>
           </h5>
         </div>
-        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
           <div class="card-body">
-            Check your firewall or use the newest version of AO.
+            Check your firewall, or try the newest version of AO.
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-header" role="tab" id="headingFive">
+        <div class="card-header" role="tab" id="headingSeven">
           <h5 class="mb-0">
-            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
-              aria-controls="collapseFive">How do I make my own server so that I can make private cases?</a>
+            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+              aria-controls="collapseSeven">How do I make my own server so that I can make private cases?</a>
           </h5>
         </div>
-        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+        <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
           <div class="card-body">
             Read the <a href="https://docs.google.com/document/d/1xOd7SDCBmSA0RM8M7JX7xACA4YUsQn72Bob9HBOzhVM/edit"
               style="color: white;"><em>"How to Server"</em></a> guide.
@@ -279,26 +337,26 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" role="tab" id="headingSix">
+        <div class="card-header" role="tab" id="headingEight">
           <h5 class="mb-0">
             <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
-              aria-controls="collapseSix">How do I open ZIP or RAR files?</a>
+              aria-controls="collapseEight">How do I open ZIP or RAR files?</a>
           </h5>
         </div>
-        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+        <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
           <div class="card-body">
             <a href="http://www.7-zip.org/download.html" style="color: white;"><em>Please download 7-Zip.</em></a>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-header" role="tab" id="headingSevem">
+        <div class="card-header" role="tab" id="headingNine">
           <h5 class="mb-0">
-            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"
-              aria-expanded="false" aria-controls="collapseSeven">Panic! Nothing works!</a>
+            <a class="collapsed acc" data-toggle="collapse" data-parent="#accordion" href="#collapseNine"
+              aria-expanded="false" aria-controls="collapseNine">Panic! Nothing works!</a>
           </h5>
         </div>
-        <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+        <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine">
           <div class="card-body">
             Contact us on <a href="https://discord.gg/wWvQ3pw">Discord</a>.
           </div>
@@ -310,7 +368,7 @@
     <div class="row links">
       <div class="col-lg-4 mb-4 col-md-12">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="images/github.png" alt="githublogo" style="margin: 0 auto;width:65%;">
+          <img class="card-img-top" src="images/github_logo.svg" alt="githublogo" style="margin: 0 auto;width:65%;">
           <div class="card-body">
             <h4 class="card-title"><a href="https://github.com/AttorneyOnline" target="_blank">GitHub</a></h4>
             <p class="card-text">Want to follow our development? We’re open source!</p>
@@ -331,10 +389,9 @@
         <div class="card h-100 text-center">
           <img class="card-img-top" src="images/lilema.png" alt="edge" style="margin: 0 auto;width:65%;">
           <div class="card-body">
-            <h4 class="card-title"><a href="https://docs.google.com/document/d/1K0lTGLcKCppo2wfiLu26oG2ttKrro3OH7BMgJxIq7lY/edit"
+            <h4 class="card-title"><a href="https://docs.google.com/document/d/1Si-d8lsJZla-BB0lhjDAwrUmawrRaMIf1EGaVNFEE_s/edit"
                 target="_blank">AO2 Technical Manual</a></h4>
-            <p class="card-text">Slightly out of date, but nonetheless still gives you a very thorough overview of how
-              AO2 works.</p>
+            <p class="card-text">The official reference for creating custom characters.</p>
           </div>
         </div>
       </div>
