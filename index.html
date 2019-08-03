@@ -40,13 +40,17 @@
       }
     }
 
-    function copyToClipboard() {
-      var text_to_copy = document.createElement("textarea");
-      document.body.appendChild(text_to_copy);
-      text_to_copy.value = arguments[0];
-      text_to_copy.select();
+    function copyToClipboard(text_to_copy, clicked_id) {
+      var text_element_copy = document.createElement("textarea");
+      document.body.appendChild(text_element_copy);
+      text_element_copy.value = text_to_copy;
+      text_element_copy.select();
       document.execCommand("copy");
-      document.body.removeChild(text_to_copy);
+      document.body.removeChild(text_element_copy);
+
+      var target = document.getElementById(clicked_id);
+      target.classList.add('copied');
+      setTimeout(function() { target.classList.remove('copied'); }, 1500);
     }
   </script>
 
@@ -175,7 +179,7 @@
               </a>
             </td>
             <td>
-              <button class="copy-hash-button" onclick="copyToClipboard('2521d7b6a83d4fac547d888e4572ff0b6c62e869')">
+              <button class="copy-hash-button" id="windows-copy-hash" onclick="copyToClipboard('2521d7b6a83d4fac547d888e4572ff0b6c62e869', this.id)">
                 <span class="hover-text">Copy Windows SHA-1</span><br/>
                 <span class="hover-triangle"></span><br/>
                 <img src="images/copy.png" height="32px"/>
@@ -192,7 +196,7 @@
               </a>
             </td>
             <td>
-              <button class="copy-hash-button" onclick="copyToClipboard('d6cbf1249600347dd86b836079018add9bb3db29')" style="margin-right: 10px;">
+              <button class="copy-hash-button" id="linux-copy-hash" onclick="copyToClipboard('d6cbf1249600347dd86b836079018add9bb3db29', this.id)" style="margin-right: 10px;">
                 <span class="hover-text">Copy Linux SHA-1</span><br/>
                 <span class="hover-triangle"></span><br/>
                 <img src="images/copy.png" height="32px"/>

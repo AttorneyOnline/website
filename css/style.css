@@ -283,7 +283,11 @@ a:hover {
 }
 
 #download-launcher-container {
-  display: flex; max-width: 100%; margin: auto; flex-wrap: wrap; justify-content: center;
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #download-launcher-box {
@@ -349,6 +353,7 @@ a:hover {
   position: relative;
   bottom: 22px;
   float: right;
+  cursor: pointer;
 }
 
 .copy-hash-button:focus {
@@ -364,7 +369,7 @@ a:hover {
   float: right;
   font-size: 12px;
   position: relative;
-  bottom: -5px;
+  bottom: -7px;
   background-color: #1a1a1a;
   border: 1px solid #cccccc;
   padding: 5px 15px 5px 15px;
@@ -381,10 +386,42 @@ a:hover {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   position: relative;
-  bottom: -15px;
+  bottom: -16px;
   border-top: 10px solid #1a1a1a;
   visibility: hidden;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.copied::after {
+  position: absolute;
+  top: 12%;
+  right: 110%;
+  display: block;
+  content: "copied";
+  font-size: 120%;
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #1a1a1a;
+  border: 1px solid #cccccc;
+  font-weight: bold;
+  border-radius: 3px;
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: showcopied 1.5s ease;
+}
+
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
 }
