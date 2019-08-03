@@ -281,3 +281,84 @@ a:hover {
 .navbar {
   background-color: black !important;
 }
+
+.download-launcher-container {
+  display: flex; max-width: 100%; margin: auto; flex-wrap: wrap; justify-content: center;
+}
+
+.download-launcher-box {
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #ffe591;
+  border-radius: 25px;
+  background: #2f2216;
+  position: relative;
+  height: 100%;
+  padding-bottom: 140px;
+}
+
+@media (min-width: 768px) {
+  .download-launcher-box {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-launcher-box {
+    max-width: calc(960px - 452px + 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-launcher-box {
+    max-width: calc(1140px - 452px);
+    margin-left: 30px;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 9px;
+  position: relative;
+  bottom: 25px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover .hover-text {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  visibility: visible;
+}
+
+button:hover .hover-triangle {
+  visibility: visible;
+}
+
+.hover-text {
+  float: right;
+  font-size: 12px;
+  position: relative;
+  bottom: -5px;
+  background-color: #1a1a1a;
+  border: 1px solid #cccccc;
+  padding: 5px 15px 5px 15px;
+  border-radius: 4px;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.hover-triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: relative;
+  bottom: -15px;
+  border-top: 10px solid #1a1a1a;
+  visibility: hidden;
+  z-index: 1;
+}
