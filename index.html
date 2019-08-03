@@ -39,6 +39,11 @@
         document.getElementById("navbarItems").innerHTML = document.getElementById("navbarItems").innerHTML + '<li class="nav-item"><a class="nav-link" href="http://web.aceattorneyonline.com/">Play Online</a></li>';
       }
     }
+
+    function copyToClipboard() {
+      var dummy = $('<input>').val(arguments[0]).appendTo('body').select()
+      document.execCommand('copy')
+    }
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -136,14 +141,14 @@
     <h1 class="mt-4 mb-3" style="text-align: center;">LAUNCHER DOWNLOAD</h1>
     <hr class="gold" />
 
-    <div class="download-launcher-container">
+    <div id="download-launcher-container">
       <div>
         <img src="images/launcher.png" alt="Attorney Online launcher screenshot">
       </div>
 
-      <div class="download-launcher-box">
+      <div id="download-launcher-box">
         <div>
-          <h5 style="margin-bottom:15px; text-align:center;">
+          <h5>
             <strong>Want to install AO and let another program handle the updating?</strong>
             <br>Look below for our launcher.
           </h5>
@@ -156,17 +161,17 @@
           </ol>
         </div>
 
-        <table style="width: 100%; position: absolute; bottom: 0px;">
+        <table id="launcher-os-table">
           <tr>
             <td>
-              <a href="https://s3.wasabisys.com/ao-downloads/AO%20Launcher.exe" target="_blank">
-                <img src="images/windows_logo.svg" height="48px" style="margin-right: 10px; float: left;"/>
-                <span style="font-weight: bold;">WINDOWS</span><br/>
-                <span style="font-size: 12px; color: lightgrey;">10,5 MB, version 1.3</span>
+              <a class="download-launcher-os" href="https://s3.wasabisys.com/ao-downloads/AO%20Launcher.exe" target="_blank">
+                <img src="images/windows_logo.svg" height="48px"/>
+                <h6>WINDOWS</h6>
+                <span>10,5 MB, version 1.3</span>
               </a>
             </td>
             <td>
-              <button onclick="copyFunction()" style="float: right; margin-right: -8px;">
+              <button class="copy-hash-button" onclick="copyToClipboard('2521d7b6a83d4fac547d888e4572ff0b6c62e869')">
                 <span class="hover-text">Copy Windows SHA-1</span><br/>
                 <span class="hover-triangle"></span><br/>
                 <img src="images/copy.png" height="32px"/>
@@ -176,14 +181,14 @@
 
           <tr>
             <td>
-              <a href="https://s3.wasabisys.com/ao-downloads/launcher" target="_blank">
-                <img src="images/linux_logo.svg" height="48px" style="margin-right: 10px; float: left;"/>
-                <span style="font-weight: bold;">LINUX</span><br/>
-                <span style="font-size: 12px; color: lightgrey;">119,6 kB, version 1.3</span>
+              <a class="download-launcher-os" href="https://s3.wasabisys.com/ao-downloads/launcher" target="_blank">
+                <img src="images/linux_logo.svg" height="48px"/>
+                <h6>LINUX</h6>
+                <span>119,6 kB, version 1.3</span>
               </a>
             </td>
             <td>
-              <button onclick="copyFunction()" style="float: right; margin-right: 0px;">
+              <button class="copy-hash-button" onclick="copyToClipboard('d6cbf1249600347dd86b836079018add9bb3db29')" style="margin-right: 10px;">
                 <span class="hover-text">Copy Linux SHA-1</span><br/>
                 <span class="hover-triangle"></span><br/>
                 <img src="images/copy.png" height="32px"/>
