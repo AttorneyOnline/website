@@ -41,8 +41,12 @@
     }
 
     function copyToClipboard() {
-      var dummy = $('<input>').val(arguments[0]).appendTo('body').select()
-      document.execCommand('copy')
+      var text_to_copy = document.createElement("textarea");
+      document.body.appendChild(text_to_copy);
+      text_to_copy.value = arguments[0];
+      text_to_copy.select();
+      document.execCommand("copy");
+      document.body.removeChild(text_to_copy);
     }
   </script>
 
