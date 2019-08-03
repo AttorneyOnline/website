@@ -355,13 +355,9 @@ a:hover {
   outline: none;
 }
 
-.copy-hash-button:hover .hover-text {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.copy-hash-button:hover .hover-text, .copy-hash-button:hover .hover-triangle {
   visibility: visible;
-}
-
-.copy-hash-button:hover .hover-triangle {
-  visibility: visible;
+  opacity: 1;
 }
 
 .hover-text {
@@ -375,6 +371,8 @@ a:hover {
   border-radius: 4px;
   visibility: hidden;
   z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .hover-triangle {
@@ -387,4 +385,6 @@ a:hover {
   border-top: 10px solid #1a1a1a;
   visibility: hidden;
   z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
