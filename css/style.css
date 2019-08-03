@@ -297,8 +297,7 @@ a:hover {
   border-radius: 25px;
   background: #2f2216;
   position: relative;
-  height: 100%;
-  padding-bottom: 140px;
+  padding-bottom: 122px;
 }
 
 #download-launcher-box div h5 {
@@ -306,10 +305,14 @@ a:hover {
   text-align: center;
 }
 
-#download-launcher-box #launcher-os-table {
+#launcher-os-table {
   width: 100%;
   position: absolute;
   bottom: 0px;
+}
+
+#launcher-os-table div{
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -354,6 +357,7 @@ a:hover {
   bottom: 22px;
   float: right;
   cursor: pointer;
+  right: 50px;
 }
 
 .copy-hash-button:focus {
@@ -366,10 +370,10 @@ a:hover {
 }
 
 .hover-text {
-  float: right;
   font-size: 12px;
   position: relative;
-  bottom: -7px;
+  bottom: 35px;
+  left: 100px;
   background-color: #1a1a1a;
   border: 1px solid #cccccc;
   padding: 5px 15px 5px 15px;
@@ -386,7 +390,8 @@ a:hover {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   position: relative;
-  bottom: -16px;
+  left: 20px;
+  bottom: 8px;
   border-top: 10px solid #1a1a1a;
   visibility: hidden;
   z-index: 1;
@@ -400,7 +405,7 @@ a:hover {
   right: 110%;
   display: block;
   content: "copied";
-  font-size: 120%;
+  font-size: 75%;
   padding: 2px 3px;
   color: #fff;
   background-color: #1a1a1a;
