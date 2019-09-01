@@ -14,7 +14,7 @@ body {
   }
   .hug {
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
   }
 }
 
@@ -137,9 +137,9 @@ a {
   }
 }
 
-@media(min-width: 768px) {
-  .row.thin{
-    max-width: 70%;
+@media(max-width: 767px) {
+  .abt-text{
+    text-align: center;
   }
 }
 
@@ -195,19 +195,18 @@ a {
   color: white !important;
 }
 
-.download-button {
+.download-button, .download-box {
   background-color: #2f2216;
-  max-width: 50%;
   padding: 15px;
   text-align: center;
   border: 2px solid #ffe591;
   color: white !important;
   border-radius: 15px;
-  margin: 5px;
+  margin-bottom: 10px;
 }
 
 .download-button img {
-  max-width: 100%;
+  width: 100%;
   margin: 0 0 35px;
 }
 
@@ -222,8 +221,9 @@ a {
 }
 
 .download-box {
-  padding: 10px 5px 10px 10px;
+  padding: 10px;
   width: 100%;
+
 }
 
 .download-box h6, strong {
@@ -241,6 +241,10 @@ a {
 
 a:hover {
   opacity: 0.8;
+}
+
+footer{
+  background: #000;
 }
 
 .helpcontainer h2 {
@@ -280,4 +284,24 @@ a:hover {
 
 .navbar {
   background-color: black !important;
+}
+
+.w-l-box{
+  padding:0px;
+  border:solid black 2px;
+  margin-bottom:10px;
+  text-align: center;
+  width: 50%;
+  float: left;
+  border-left-width: 1px;
+}
+.w-l-box:first-of-type{
+  border-left-width: 2px;
+  border-right-width: 1px;
+}
+
+@media(max-width: 390px){
+  .button-carousel{
+    margin-bottom: 20px;
+  }
 }
