@@ -96,6 +96,12 @@ hr.gold {
   border-radius: 0px !important;
 }
 
+.card-img-top{
+  margin: 0 auto;
+  width:65%;
+  padding-top: 5px;
+}
+
 @media (max-width:411px) {
   .top-bois {
     display: none !important;
@@ -299,7 +305,20 @@ footer{
   border-left-width: 2px;
   border-right-width: 1px;
 }
-
+.orange{
+  background-color: #a75200;
+  max-height: 3em;
+  position: relative;
+}
+.blue{
+  background-color: #1d3fa1;
+  border-color: #0054ff;
+  max-height: 3em;
+  position: relative;
+}
+.nomargin{
+  margin: 0;
+}
 @media(max-width: 390px){
   .button-carousel{
     margin-bottom: 20px;
