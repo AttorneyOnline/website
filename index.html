@@ -39,6 +39,19 @@
 				document.getElementById("navbarItems").innerHTML = document.getElementById("navbarItems").innerHTML + '<li class="nav-item"><a class="nav-link" href="http://web.aceattorneyonline.com/">Play Online</a></li>';
 			}
 		}
+
+		function copyToClipboard(text_to_copy, clicked_id) {
+			var text_element_copy = document.createElement("textarea");
+			document.body.appendChild(text_element_copy);
+			text_element_copy.value = text_to_copy;
+			text_element_copy.select();
+			document.execCommand("copy");
+			document.body.removeChild(text_element_copy);
+
+			var target = document.getElementById(clicked_id);
+			target.classList.add('copied');
+			setTimeout(function() { target.classList.remove('copied'); }, 1500);
+		}
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -135,7 +148,60 @@
 	</div>
 
 	<hr id="download" />
-	<h1 class="mt-4 mb-3 text-center">FULL DOWNLOAD</h1>
+	<h1 class="mt-4 mb-3 text-center">LAUNCHER DOWNLOAD</h1>
+	<hr class="gold" />
+
+	<div id="download-launcher-container" style="vertical-align: middle;">
+	<div style="display:flex;justify-content:center;align-items:center;">
+		<img src="images/launcher.png" alt="Attorney Online launcher screenshot">
+	</div>
+
+	<div id="download-launcher-box">
+		<div>
+			<h5>
+				<strong>Want to install AO and let another program handle the updating?</strong>
+				<br>Look below for our launcher.
+			</h5>
+			<p>Too much of a <s>lobotomite</s> busy person to copy a few files manually every time a new version of the client gets released? Then this is for you!</p>
+			<h6>How to use:</h6>
+			<ol>
+				<li>Download the launcher.</li>
+				<li>Put the executable in any folder you want.</li>
+				<li>Run the launcher, you will be able to download and update the client from there.</li>
+			</ol>
+		</div>
+
+		<div id="launcher-os-table">
+			<div>
+				<a class="download-launcher-os" href="https://s3.wasabisys.com/ao-downloads/AO%20Launcher.exe" target="_blank">
+					<img src="images/windows_logo.svg" height="48px"/>
+					<h6>WINDOWS</h6>
+					<span>10,5 MB, version 1.3</span>
+				</a>
+				<button class="copy-hash-button" id="windows-copy-hash" onclick="copyToClipboard('2521d7b6a83d4fac547d888e4572ff0b6c62e869','windows-tooltip')">
+					<span class="hover-text" id="windows-tooltip">Copy Windows SHA-1</span>
+					<span class="hover-triangle"></span>
+					<img src="images/copy.png" height="32px"/>
+				</button>
+			</div>
+
+			<div>
+				<a class="download-launcher-os" href="https://s3.wasabisys.com/ao-downloads/launcher" target="_blank">
+					<img src="images/linux_logo.svg" height="48px"/>
+					<h6>LINUX</h6>
+					<span>119,6 kB, version 1.3</span>
+				</a>
+				<button class="copy-hash-button" id="linux-copy-hash" onclick="copyToClipboard('d6cbf1249600347dd86b836079018add9bb3db29','linux-tooltip')">
+					<span id="linux-tooltip" class="hover-text" >Copy Linux SHA-1</span>
+					<span class="hover-triangle"></span>
+					<img src="images/copy.png" height="32px"/>
+				</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<h1 class="mt-4 mb-3 text-center">STANDALONE CLIENT</h1>
 	<hr class="gold" />
 
 	<div class="row">
