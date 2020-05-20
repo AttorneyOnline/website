@@ -324,3 +324,152 @@ footer{
     margin-bottom: 20px;
   }
 }
+
+#download-launcher-container {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#download-launcher-box {
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #ffe591;
+  border-radius: 25px;
+  background: #2f2216;
+  position: relative;
+  padding-bottom: 122px;
+}
+
+#download-launcher-box div h5 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#launcher-os-table {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+#launcher-os-table div{
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  #download-launcher-box {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  #download-launcher-box {
+    max-width: calc(960px - 452px + 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  #download-launcher-box {
+    max-width: calc(1140px - 452px);
+    margin-left: 30px;
+  }
+}
+
+.download-launcher-os img {
+  margin-right: 10px;
+  float: left;
+}
+
+.download-launcher-os h6 {
+  font-weight: bold;
+}
+
+.download-launcher-os span {
+  font-size: smaller;
+  color: lightgrey;
+}
+
+.copy-hash-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 9px;
+  position: relative;
+  bottom: 22px;
+  float: right;
+  cursor: pointer;
+  right: 50px;
+}
+
+.copy-hash-button:focus {
+  outline: none;
+}
+
+.copy-hash-button:hover .hover-text, .copy-hash-button:hover .hover-triangle {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hover-text {
+  font-size: 12px;
+  position: relative;
+  bottom: 35px;
+  left: 100px;
+  background-color: #1a1a1a;
+  border: 1px solid #cccccc;
+  padding: 5px 15px 5px 15px;
+  border-radius: 4px;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hover-triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: relative;
+  left: 20px;
+  bottom: 8px;
+  border-top: 10px solid #1a1a1a;
+  visibility: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.copied::after {
+  position: absolute;
+  top: 12%;
+  right: 110%;
+  display: block;
+  content: "copied";
+  font-size: 75%;
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #1a1a1a;
+  border: 1px solid #cccccc;
+  font-weight: bold;
+  border-radius: 3px;
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: showcopied 1.5s ease;
+}
+
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
