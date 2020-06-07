@@ -396,11 +396,10 @@ footer{
   border: none;
   color: white;
   font-size: 9px;
-  position: relative;
-  bottom: 22px;
-  float: right;
   cursor: pointer;
-  right: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .copy-hash-button:focus {
@@ -410,6 +409,15 @@ footer{
 .copy-hash-button:hover .hover-text, .copy-hash-button:hover .hover-triangle {
   visibility: visible;
   opacity: 1;
+}
+
+.launcher-dl-box {
+  position: relative;
+  text-align: left;
+}
+
+.launcher-dl-box:last-of-type {
+  margin-top: 15px;
 }
 
 .hover-text {
@@ -460,6 +468,18 @@ footer{
   animation: showcopied 1.5s ease;
 }
 
+.launcher.download-box ol {
+  text-align: left;
+}
+
+a.download-launcher-os {
+  text-decoration: none;
+}
+
+a.download-launcher-os:hover {
+  text-decoration: underline;
+}
+
 @keyframes showcopied {
   0% {
     opacity: 0;
@@ -471,5 +491,15 @@ footer{
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-text, .hover-triangle {
+    display: none;
+  }
+  .launcher.download-box ol {
+    list-style-position: inside;
+    padding: 0;
   }
 }
