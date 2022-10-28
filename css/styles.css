@@ -210,6 +210,10 @@ button.navbar-toggler{
 	text-transform: uppercase;
 }
 
+nav > .btn {
+	margin-left: 1rem;
+}
+
 .btn:hover{
 	background-color: #142a6c;
 	color: #fff;
@@ -329,6 +333,11 @@ a.link img{
 .sha{
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.faqs > p {
+	color: #fff;
+	padding-left:0.5em;
 }
 
 @media(max-width: 992px){
