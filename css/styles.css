@@ -1,0 +1,368 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Oswald', sans-serif;
+	background-image: url("../img/grain-overlay.png");
+	background-repeat: repeat;
+	margin: 0;
+	word-break: break-word;
+}
+
+img{
+	margin: 0 auto;
+    display: block;
+	width: auto;
+	max-width: 100%;
+}
+
+.navbar{
+	background-color: #111111 !important;
+}
+
+.nav-item, .logo{
+	margin: 0 auto;
+	font-size: 20px;
+}
+.container-fluid{
+	max-width: 1400px;
+}
+
+.container{
+	margin-top: 4em;
+}
+
+.container.first{
+	margin-top: 1em;
+}
+
+.jumbotron {
+	color: white;
+	background-image: url("../img/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0px;
+	padding-bottom: 0;
+	height: 90vh;
+	text-align:  center;
+	position: relative;
+} 
+
+.jumbo-text, .jumbo-hoverlogo{
+	position: absolute;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    color: #fff;
+    font-size: 6em;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    text-shadow: -2px -2px 0 black, -1px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -1px 2px 0 black, 2px 2px 0 black;
+}
+
+.jumbo-hoverlogo{
+	width: 20vw;
+    margin: 0;
+}
+
+.row.cards{
+	margin-top: 40px;
+}
+
+.row.carouselrow{
+	margin-top: 20px;
+}
+
+.videobox{
+	padding-left: 0px; 
+	margin-top:-50px;
+}
+
+.cta-1{
+	margin-top: 20px;
+}
+
+.small-line{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border-top: 1px solid #99664d;
+	padding-top: .4em;
+	margin: 1rem auto;
+	width: 100%;
+	font-size: 14px;
+}
+
+.card .small-line{
+	margin: 0 auto 1rem;
+	max-width: 10rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poiret One', serif;
+	color: #c5ac66;
+}
+
+.card{
+	border-radius: 0px;
+	background-color: transparent;
+	border: 0px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.card-body{
+	background: linear-gradient(to top, black 65%, transparent);
+	background: -webkit-linear-gradient(bottom, black 65%, transparent);
+	background: -moz-linear-gradient(bottom, black 65%, transparent);
+	background-color: transparent;
+	margin-top: -30%;
+}
+
+.outline{
+	position: absolute;
+	width: 95%;
+	height: 95%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: .1rem;
+	bottom: 0;
+	pointer-events: none;
+}
+
+.outline:before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: calc(100%);
+	border: #c5ac66 1px solid;
+	width: 97%;
+}
+
+.outline:after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: calc(98%);
+	border: #c5ac66 1px solid;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.card .btn{
+	margin-bottom: 10px;
+}
+.card-title{
+	margin-top: 3rem;
+}
+
+.jumbo-logo{
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.navbar-nav{
+	margin-left: 20px;
+}
+
+.navbar-toggler.collapsed{
+	background: rgba(0,0,0,0.5);
+}
+
+button.navbar-toggler{
+	background: rgba(197, 172, 102,0.5);
+	border-radius: 100px;
+	outline: none;
+	padding: 0;
+	width: 1.5em;
+	height: 1.5em;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.navbar-toggler-icon{
+	width: 0.8em;
+	height: 0.8em;
+	vertical-align: baseline;
+}
+
+.btn{
+	background-color: #1d3fa1;
+	border: 2px solid;
+    border-color: #0054ff;
+	outline: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.btn:hover{
+	background-color: #142a6c;
+	color: #fff;
+}
+
+.btn.dl{
+	background-color: #F77D24;
+    border-color: #ebab7d;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn.dl:hover{
+	background-color: #a9571b;
+}
+
+.btn.windows{
+	background-color: #0067b8;
+	border-color: #80c8ff;
+}
+
+.btn.windows:hover{
+	background-color: #004880;
+}
+
+.btn.linux{
+	background-color: #E95420;
+	border-color: #f4a78b;
+}
+
+.btn.linux:hover{
+	background-color: #a23710;
+}
+
+.hideme{
+	opacity: 0;
+}
+
+.carousel-caption{
+	text-shadow: 1px 1px 1px black;
+}
+
+img.btn-img {
+    width: 50px;
+    margin-right: 0.5em;
+}
+
+#downloadBtn .btn-div, img.btn-img {
+	display: inline-block;
+}
+
+#downloadBtn .btn-div:first-of-type{
+	margin-right: 1.5em;
+}
+
+#downloadBtn a{
+	width: 180px;
+	max-width: 100%;
+	text-align: left;
+}
+
+#standaloneBtn a{
+	width: 100%;
+}
+
+#standaloneBtn a:first-of-type{
+	margin-bottom: 1.5em;
+}
+
+a.link{
+	color: #e9d292;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+a.link:hover{
+	color: #c5ac66;
+}
+
+a.link img{
+	width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.sha{
+	margin-bottom: 0;
+}
+
+.copied-success{
+	opacity: 0.8;
+	position:  absolute;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.btn p{
+	display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.btn p.small{
+	font-size: 50%;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-div{
+	position: relative;
+}
+
+.sha{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media(max-width: 992px){
+	.videobox{
+		padding-left: 15px;
+	}
+	.btn-div{
+		text-align: center;
+	}
+	.navbar .btn{
+		display: none;
+	}
+	.jumbotron{
+		height: auto;
+	}
+	.navbar-nav{
+		margin: 0;
+	}
+}
+
+@media(max-width:  767px){
+	#downloadBtn .btn-div {
+		display: block;
+	}
+	#downloadBtn .btn-div:first-of-type{
+		margin-bottom: 1.2em;
+		margin-right: 0;
+	}
+	h1, h2, h2.text-right{
+		text-align: center !important;
+	}
+	.jumbo-text{
+		font-size: 3.5em;
+	}
+	.jumbo-hoverlogo{
+		width: 60vw;
+	}
+}
