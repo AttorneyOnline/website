@@ -61,12 +61,13 @@ img{
     font-size: 6em;
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
-    text-shadow: -2px -2px 0 black, -1px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -1px 2px 0 black, 2px 2px 0 black;
+    text-shadow: 0 0 8px black, 0 0 16px black;
 }
 
 .jumbo-hoverlogo{
-	width: 20vw;
+	width: 25vw;
     margin: 0;
+	filter: drop-shadow(0 0px 3px black) drop-shadow(0 0px 16px black);
 }
 
 .row.cards{
