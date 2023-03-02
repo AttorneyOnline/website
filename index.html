@@ -54,9 +54,6 @@
 			setTimeout(function() { target.classList.remove('copied'); }, 1500);
 		}
 		
-		var today = new Date();
-		var year = today.getFullYear();
-		document.getElementById("current-year").innerHTML = year;
 </script>
 </head>
 
@@ -478,5 +475,9 @@
 </footer>
 
 </body>
-
+<script>
+	var today = new Date();
+	var year = today.getFullYear();
+	document.getElementById("current-year").innerHTML = year;
+</script>
 </html>
