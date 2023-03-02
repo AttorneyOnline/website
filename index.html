@@ -53,6 +53,10 @@
 			target.classList.add('copied');
 			setTimeout(function() { target.classList.remove('copied'); }, 1500);
 		}
+		
+		var today = new Date();
+		var year = today.getFullYear();
+		document.getElementById("current-year").innerHTML = year;
 </script>
 </head>
 
@@ -465,13 +469,7 @@
 
 <footer class="py-5">
 	<div class="container">
-		<p class="m-0 text-center text-white">Rue Web Design &copy; AO
-			<script>
-				var today = new Date();
-				var year = today.getFullYear();
-				document.write(year);
-			</script>
-		</p>
+		<p class="m-0 text-center text-white">Rue Web Design &copy; AO <span id="current-year">2023</span></p>
 		<p class="m-0 text-center text-white">
 			This website is not endorsed by Capcom or Chunsoft; this is a fanmade game.
 			All content and trademarks are property of their respective owners.
