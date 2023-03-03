@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6{
 	border: 0px;
 	text-align: center;
 	margin-bottom: 20px;
+	height: 100%;
 }
 
 .card-body{
@@ -374,5 +375,8 @@ a.link img{
 	}
 	.jumbo-hoverlogo{
 		width: 60vw;
+	}
+	.card {
+		height: auto;
 	}
 }
