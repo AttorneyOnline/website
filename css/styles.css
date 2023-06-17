@@ -62,6 +62,7 @@ img{
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
     text-shadow: 0 0 8px black, 0 0 16px black;
+    z-index: 99;
 }
 
 .jumbo-hoverlogo{
