@@ -1,0 +1,14 @@
+title: Attorney Online
+description: Attorney Online
+url: "https://aceattorneyonline.com"
+
+markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts

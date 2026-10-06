@@ -1,0 +1,21 @@
+---
+layout: blog
+---
+
+<article class="ao-blog-post">
+
+    <header class="ao-blog-post-header">
+        <h1>{{ page.title }}</h1>
+        <div class="small-line"></div>
+        <p class="ao-blog-post-date">
+            {{ page.date | date: "%B %-d, %Y" }}
+            {% if page.author %}
+                · {{ page.author }}
+            {% endif %}
+        </p>
+    </header>
+
+    <div class="ao-blog-post-content">
+        {{ content }}
+    </div>
+</article>

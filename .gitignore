@@ -11,3 +11,6 @@ Thumbs.db
 *.bz2
 blog/
 vendor/
+_site/
+.jekyll-cache/
+.jekyll-metadata

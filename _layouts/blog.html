@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="ao-blog">
+    <aside class="ao-blog-sidebar">
+        <div class="ao-blog-sidebar-inner">
+
+            <a class="ao-blog-title" href="{{ '/blog/' | relative_url }}">
+                AO BLOG
+            </a>
+
+            <div class="small-line"></div>
+
+            <nav class="ao-blog-post-list">
+                <div class="ao-blog-post-list-title">
+                    POSTS
+                </div>
+
+                {% for post in site.posts %}
+                <a
+                    href="{{ post.url | relative_url }}"
+                    class="ao-blog-post-link{% if page.url == post.url %} active{% endif %}"
+                >
+                    <span class="ao-blog-post-link-title">
+                        {{ post.title }}
+                    </span>
+                    <span class="ao-blog-post-link-date">
+                        {{ post.date | date: "%b %-d, %Y" }}
+                    </span>
+                </a>
+                {% endfor %}
+
+            </nav>
+
+        </div>
+    </aside>
+
+    <main class="ao-blog-content">
+        {{ content }}
+    </main>
+</div>
