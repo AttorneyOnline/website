@@ -35,30 +35,14 @@
 
 </head>
 <body class="text-white">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<img class="logo" alt="Phoenix Wright and Miles Edgeworth" src="img/logo.png" height="55">
-		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			  <li class="nav-item">
-			    <a class="nav-link" href="index.html">HOME </a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="download.html">DOWNLOAD </a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="support.html">SUPPORT & FAQ </a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="https://discord.gg/wWvQ3pw">DISCORD </a>
-			  </li>
-			</ul>
-		</div>
-		<a href="http://web.aceattorneyonline.com" class="btn btn-lg active">PLAY ONLINE</a>
-		<a href="download.html#first" class="btn btn-lg active dl" role="button" aria-pressed="true">Download Now</a>
-	</nav>
+	<div id="navbar"></div>
+	<script>
+	fetch('navbar.html')
+		.then(response => response.text())
+		.then(html => {
+			document.getElementById('navbar').innerHTML = html;
+		});
+	</script>
 	<div class="jumbotron jumbotron-fluid">
 		<h1 class="jumbo-text">SUPPORT & FAQ</h1>
 		<img class="jumbo-logo" src="img/AO-BG-BLANK.webp" alt="AO background">
@@ -75,7 +59,7 @@
 						<h5 style="color: #fff; padding-left:0.5em;">We recommend using 7-Zip for extracting .rar and .zip files!</h5>
 						<h4><a class="link" target="_blank" href="https://docs.google.com/document/d/1xOd7SDCBmSA0RM8M7JX7xACA4YUsQn72Bob9HBOzhVM/edit">How to Server Guide <img src="img/share.png" alt="Share Icon" /></a></h4>
 						<h5 style="color: #fff; padding-left:0.5em;">If you are wanting to start up your own server, we recommend using the how-to server guide.</h5>
-						<h4><a class="link" target="_blank" href="https://discord.gg/wWvQ3pw">Contact us on Discord <img src="img/share.png" alt="Share Icon" /></a></h4>
+						<h4><a class="link" target="_blank" href="http://discord.gg/6jk3bWS">Contact us on Discord <img src="img/share.png" alt="Share Icon" /></a></h4>
 						<h5 style="color: #fff; padding-left:0.5em;">For any other specific queries, the Discord server is always open!</h5>
 					</div>
 				</div>

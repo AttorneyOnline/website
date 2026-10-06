@@ -35,30 +35,14 @@
 
 </head>
 <body class="text-white">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<img class="logo" alt="Phoenix Wright and Miles Edgeworth" src="img/logo.png" height="55">
-		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			  <li class="nav-item">
-			    <a class="nav-link" href="index.html">HOME </a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="download.html">DOWNLOAD </a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="support.html">SUPPORT & FAQ </a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="https://discord.gg/wWvQ3pw">DISCORD </a>
-			  </li>
-			</ul>
-		</div>
-		<a href="http://web.aceattorneyonline.com" class="btn btn-lg active">PLAY ONLINE</a>
-		<a href="download.html#first" class="btn btn-lg active dl" role="button" aria-pressed="true">Download Now</a>
-	</nav>
+	<div id="navbar"></div>
+	<script>
+	fetch('navbar.html')
+		.then(response => response.text())
+		.then(html => {
+			document.getElementById('navbar').innerHTML = html;
+		});
+	</script>
 	<div class="jumbotron jumbotron-fluid">
 		<img class="jumbo-hoverlogo" src="img/logo-new.svg" alt="AO New Logo">
 		<img class="jumbo-logo" src="img/AO-BG-BLANK.webp" alt="AO background">
@@ -107,7 +91,7 @@
 					    <h3 class="card-title">JOIN OUR COMMUNITY</h3>
 					    <div class="small-line"></div>
 					    <p class="card-text">Join our Discord server to stay up to date on the latest news and community happenings, and learn how to case.</p>
-					    <a href="https://discord.gg/wWvQ3pw" class="btn">Become a Member</a>
+					    <a href="http://discord.gg/6jk3bWS" class="btn">Become a Member</a>
 					</div>
 				</div>
 			</div>
@@ -130,7 +114,7 @@
 		<div class="text-center p-3">
 			<img src="img/aogrey.png" height="100px" alt="AO Logo Greyscale"> 
 			<br/>
-	    	© 2023 Attorney Online Team | Website donated by Rue
+	    	© 2026 Attorney Online Team | Website donated by Rue
 	    	<br/>
 	    	This website is not endorsed by Capcom or Chunsoft; this is a fanmade game. All content and trademarks are property of their respective owners.
   		</div>
