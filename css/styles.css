@@ -99,6 +99,14 @@ img{
 	font-size: 14px;
 }
 
+hr {
+    border: none;
+    border-top: 1px solid #99664d;
+    padding-top: .4em;
+    margin: 1rem auto;
+    width: 100%;
+}
+
 .card .small-line{
 	margin: 0 auto 1rem;
 	max-width: 10rem;
@@ -107,6 +115,40 @@ img{
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Poiret One', serif;
 	color: #c5ac66;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ul {
+    list-style-type: disc;
+}
+ul ul {
+    list-style-type: circle;
+}
+ul ul ul {
+    list-style-type: square;
+}
+
+.rules-page {
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.rules-page li, 
+.rules-page p {
+    font-size: 1.3rem;
 }
 
 .card{

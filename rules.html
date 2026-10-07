@@ -1,0 +1,15 @@
+---
+layout: default
+title: Server Listing Rules
+---
+
+<div class="container">
+	<div class="row">
+        <div class="rules-page">
+            {% capture rules_content %}
+                {% include rules.md %}
+            {% endcapture %}
+            {{ rules_content | markdownify }}
+        </div>
+    </div>
+</div>
