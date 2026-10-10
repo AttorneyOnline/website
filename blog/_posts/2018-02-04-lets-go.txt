@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Let’s go!"
+author: "longbyte1"
+---
+
+We’ve decided to begin the year with a new website and blog! For a long time, we’ve wanted to write more about development progress, ideas, and events in a centralized place to save players from having to read the thousands of messages in our hectic Discord server. From Attorney Online’s long and contrived history, no news has always been the status quo – but evidently, the status quo has changed.
+
+More specifically, what may you find in this blog in the not-so-distant future?
+
+    Important announcements, such as master server downtime or new versions
+    Software engineering and design articles related to the next installment of AO
+    Fun events! (maybe)
+    Our terrible procrastination habits
+    …and other interesting miscellany!
+
+Along with the website and blog, we’ve also been trying to get webAO operational again. It’s not a drop-in replacement to desktop AO by any means, but it might work fine if you just want to try out the game without downloading all of the content.
+
+As for Attorney Online 3, you might have heard deadlines of “the end of January” or “August.” I’d like to make it clear that due to my obligations in real life and university, I can’t make any promises regarding any sort of milestone date (or whether or not it will even be released or finished), and given the sheer immensity of the game I’m entasked to remake, there will be many bugs even after the game gets released. For now, the focus is on good design principles over churning out code quickly – otherwise, we’ll end up with the same mess we started with.
+
+This December, from a freak change in the YouTube recommendations algorithm leading people to some nostalgic videos about AO, we received an influx of about 24,000 players, ballooning the Discord server from 600 members to just over 2,000 members! While the growth was not sustainable, the number should be enough to keep the AO community afloat with what we have right now.
+
+That said, stay tuned for some smaller articles regarding the next steps for AO.
+
+Keep on objectin’!
