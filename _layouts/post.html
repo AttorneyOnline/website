@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main class="container blog-container">
+  <article class="blog-post">
+    <header>
+      <p><a href="{{ '/blog/' | relative_url }}">&larr; All posts</a></p>
+      <h1>{{ page.title | escape }}</h1>
+      <p class="blog-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% if page.author %} &middot; {{ page.author | escape }}{% endif %}</p>
+      <div class="small-line"></div>
+    </header>
+    <div class="blog-content">{{ content }}</div>
+    <nav class="blog-pagination" aria-label="Other posts">
+      {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title | escape }}</a>{% endif %}
+      {% if page.next %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} &rarr;</a>{% endif %}
+    </nav>
+  </article>
+</main>

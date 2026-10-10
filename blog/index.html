@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+description: News and updates from Attorney Online.
+permalink: /blog/
+---
+<main class="container blog-container">
+  <h1>BLOG</h1>
+  <p>News and updates from Attorney Online.</p>
+  <div class="small-line"></div>
+  {% for post in site.posts %}
+  <article class="blog-summary">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    <p class="blog-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>{% if post.author %} &middot; {{ post.author | escape }}{% endif %}</p>
+    <div class="blog-content">{{ post.excerpt }}</div>
+    <a class="btn" href="{{ post.url | relative_url }}">Read more<span class="sr-only">: {{ post.title | escape }}</span></a>
+  </article>
+  {% else %}
+  <p>No posts yet. Check back soon for news and updates!</p>
+  {% endfor %}
+</main>

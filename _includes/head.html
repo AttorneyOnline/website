@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="author" content="Attorney Online">
+    <meta name="keywords" content="ace attorney, attorney online, phoenix wright, roleplay"/>
+    <meta name="copyright" content="Attorney Online" />
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:image" content="{{ '/img/logo.png' | absolute_url }}">
+
+    <!-- Mobile Specifc Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap Integration -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Oswald%7CRoboto+Condensed%7CPoiret+One&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ '/img/favicon.ico' | relative_url }}" type="image/x-icon">
+
+</head>
