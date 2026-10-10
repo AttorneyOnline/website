@@ -9,5 +9,11 @@ ehthumbs.db
 Thumbs.db
 
 *.bz2
-blog/
 vendor/
+
+# Jekyll and Bundler
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
